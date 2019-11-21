@@ -2,7 +2,7 @@
 
 ![](https://img.shields.io/badge/language-java-gree.svg)
 ![https://img.shields.io/badge/license-Apache%202.0-blue.svg?longCache=true&style=flat-square](https://img.shields.io/badge/license-Apache%202.0-blue.svg?longCache=true&style=flat-square)
-![https://img.shields.io/badge/spring boot-2.1.1-red.svg?longCache=true&style=flat-square](https://img.shields.io/badge/spring boot-2.1.1-red.svg?longCache=true&style=flat-square)
+![https://img.shields.io/badge/springboot-2.1.1-red.svg?longCache=true&style=flat-square](https://img.shields.io/badge/springboot-2.1.1-red.svg?longCache=true&style=flat-square)
 
 > 本仓库主要用于存放博主学习设计模式的示例代码。**纯原创**，详细介绍，见下方文章链接。
 >如果该系列示例对您有所帮助的话，还请点个`Star`给予精神支持！😘
