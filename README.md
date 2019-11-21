@@ -18,11 +18,11 @@
 
 ## 三、怎么样学习使用设计模式？
 
-| 设计模式 | 完成度 |
-| --- | --- |
-| [单例模式](#) | 已完成 |
-| [工厂模式](#) | 即将完成 |
-| 更多模式 | 待完善。。。 |
+| 设计模式 | 示例代码 | 完成度 |
+| --- | --- | --- | 
+| [单例模式](#) | [singleton-demo](https://github.com/vanDusty/Design-Patterns/tree/master/singleton-demo) | 已完成 |
+| [工厂模式](#) | [factory-demo](#) | 即将完成 |
+| 更多模式 | 待完善。。。 | 未完待续 |
 
 
 
@@ -30,7 +30,7 @@
 
 1. [风尘博客：https://www.dustyblog.cn](https://www.dustyblog.cn)
 1. [风尘博客-掘金](https://juejin.im/user/5d5ea68e6fb9a06afa328f56/posts)
-1. [风尘博客-博客园：](https://www.cnblogs.com/vandusty/)
-1. [Github: https://github.com/vanDusty](Github: https://github.com/vanDusty)
+1. [风尘博客-博客园](https://www.cnblogs.com/vandusty/)
+1. [Github](https://github.com/vanDusty)
 1. 公众号</br>
 ![风尘博客](https://raw.githubusercontent.com/vanDusty/Design-Patterns/master/img/van/dusty_blog.png)
