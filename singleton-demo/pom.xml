@@ -14,9 +14,12 @@
     <artifactId>singleton-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <description>单例模式
-        更多文章，欢迎关注 - 风尘博客：https://www.dustyblog.cn
-        风尘博客-博客园：https://www.cnblogs.com/vandusty
+    <description>
+        单例模式
+        更多文章，欢迎关注：
+        风尘博客：https://www.dustyblog.cn
+        公众号：风尘博客
+        Github: https://github.com/vanDusty
     </description>
 
     <dependencies>
