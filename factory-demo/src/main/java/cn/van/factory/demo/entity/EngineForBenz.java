@@ -7,7 +7,7 @@ package cn.van.factory.demo.entity;
  *
  * @author: Van
  * Date:     2019-11-20 19:28
- * Description: 通用的发动机实体
+ * Description: 奔驰发动机
  * Version： V1.0
  */
 public class EngineForBenz extends Engine{

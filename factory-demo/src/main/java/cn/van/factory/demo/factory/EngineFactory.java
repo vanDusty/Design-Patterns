@@ -15,7 +15,8 @@ import cn.van.factory.demo.entity.Engine;
 public interface EngineFactory<T> {
 
     /**
-     * 生产发动机的方法，各个产线可以有自己的方式生产
+     * 抽象工厂，各个产线可以有自己的方式生产
+     *
      */
     Engine produceEngine();
 

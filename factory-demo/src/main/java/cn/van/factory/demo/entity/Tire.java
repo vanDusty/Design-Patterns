@@ -7,7 +7,7 @@ package cn.van.factory.demo.entity;
  *
  * @author: Van
  * Date:     2019-11-20 23:17
- * Description: 通用的轮胎实体
+ * Description: 轮胎通用属性
  * Version： V1.0
  */
 public class Tire {

@@ -7,7 +7,7 @@ package cn.van.factory.demo.simple;
  *
  * @author: Van
  * Date:     2019-11-20 23:25
- * Description: 简单工厂模式
+ * Description: 简单工厂
  * Version： V1.0
  */
 
@@ -44,12 +44,5 @@ public class SimpleFactoryMode {
         }
         return null;
     }
-
-    /**
-     *
-     * 缺点：
-     * 每次增加不同品牌的时候都需要在工厂方法里添加不同的条件判断；
-     * 如果品牌越来越多，代码看起来非常臃肿，很不利于后期的代码维护。
-     * */
 
 }

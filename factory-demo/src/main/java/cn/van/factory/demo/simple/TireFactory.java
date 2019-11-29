@@ -9,13 +9,16 @@ import cn.van.factory.demo.entity.Tire;
  *
  * @author: Van
  * Date:     2019-11-20 23:17
- * Description: 轮胎的工厂类
+ * Description: 生产轮胎的接口
  * Version： V1.0
  */
 public interface TireFactory {
 
     /**
-     * 生产轮胎的方法，各个产线可以有自己的方式生产
+     * 生产轮胎的抽象方法，各个产线有自己的方式生产
+     *
+     * @return
      */
+
     Tire produceTire();
 }
