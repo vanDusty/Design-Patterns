@@ -1,26 +1,51 @@
 package cn.van.sfs.demo;
 
+import cn.van.sfs.demo.common.CalculationUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 /**
- * Copyright (C), 2015-2020, 风尘博客
- * 公众号 : 风尘博客
- * FileName: StrategyTest
- *
- * @author: Van
- * Date:     2020-02-14 14:44
- * Description: ${DESCRIPTION}
- * Version： V1.0
+ * @公众号： 风尘博客
+ * @Classname DemoTest
+ * @Description TODO
+ * @Date 2020/2/7 9:22 下午
+ * @Author by Van
  */
-@SpringBootTest
-@RunWith(SpringRunner.class)
 public class DemoTest {
 
     @Test
-    public void ddd() {
-        System.out.println(2222);
+    public void test() {
+        // 常规写法
+        Double fee = commonMethod(1, 20000.00);
+        System.out.println(fee);
+        // 优化写法
+        Double fees = upMethod(1,20000.00);
+        System.out.println(fees);
+    }
+
+    public Double upMethod(Integer type, Double amount) {
+        // getFee（）是暴露给用户的的计算方法
+        return CalculationUtil.getFee(type, amount);
+    }
+
+    public Double commonMethod(Integer type, Double amount) {
+        if (3 == type) {
+            // 计算费用
+            if (true) {
+                // 此处省略200行代码，包含n个if-else，下同。。。
+            }
+            return 0.00;
+        } else if (2 == type) {
+            // 计算费用
+            return 6.66;
+        }else if (1 == type) {
+            // 计算费用
+            return 8.88;
+        }else if (0 == type){
+            return 9.99;
+        }
+        throw new IllegalArgumentException("please input right value");
     }
 }

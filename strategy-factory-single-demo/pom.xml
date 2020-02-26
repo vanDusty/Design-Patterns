@@ -15,7 +15,7 @@
     </parent>
 
     <description>
-        策略模式 + 工厂模式 + 单例模式
+        策略模式优化 if-else 嵌套
         更多文章，欢迎关注：
         风尘博客：https://www.dustyblog.cn
         公众号：风尘博客
@@ -29,4 +29,16 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
