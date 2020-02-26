@@ -2,7 +2,7 @@ package cn.van.strategy.demo;
 
 import cn.van.strategy.demo.base.impl.Addition;
 import cn.van.strategy.demo.base.impl.Subtraction;
-import cn.van.strategy.demo.util.Calculator;
+import cn.van.strategy.demo.base.Context;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -27,9 +27,9 @@ public class StrategyTest {
      */
     @Test
     public void additionTest() {
-        Calculator calculator = new Calculator();
-        calculator.setStrategy(new Addition());
-        System.out.println("计算结果为：" + calculator.getResult(1, 2));
+        Context context = new Context();
+        context.setStrategy(new Addition());
+        System.out.println("计算结果为：" + context.getResult(1, 2));
     }
 
     /**
@@ -37,8 +37,8 @@ public class StrategyTest {
      */
     @Test
     public void subtractionTest() {
-        Calculator calculator = new Calculator();
-        calculator.setStrategy(new Subtraction());
-        System.out.println("计算结果为：" + calculator.getResult(1, 2));
+        Context context = new Context();
+        context.setStrategy(new Subtraction());
+        System.out.println("计算结果为：" + context.getResult(1, 2));
     }
 }

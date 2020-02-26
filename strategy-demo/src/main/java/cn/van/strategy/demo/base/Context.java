@@ -1,18 +1,18 @@
-package cn.van.strategy.demo.util;
+package cn.van.strategy.demo.base;
 
 import cn.van.strategy.demo.base.Strategy;
 
 /**
  * Copyright (C), 2015-2020, 风尘博客
  * 公众号 : 风尘博客
- * FileName: Calculator
+ * FileName: Context
  *
  * @author: Van
  * Date:     2020-02-01 14:41
  * Description:
  * Version： V1.0
  */
-public class Calculator {
+public class Context {
 
     /**
      * 拥有某种算法策略

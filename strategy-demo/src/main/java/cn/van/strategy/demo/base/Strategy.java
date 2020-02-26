@@ -18,5 +18,5 @@ public interface Strategy {
      * @param b
      * @return
      */
-    public int calculate(int a, int b);
+    int calculate(int a, int b);
 }
