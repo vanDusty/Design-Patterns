@@ -2,9 +2,6 @@ package cn.van.sfs.demo;
 
 import cn.van.sfs.demo.common.CalculationUtil;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
 /**
  * @公众号： 风尘博客
@@ -23,6 +20,8 @@ public class DemoTest {
         // 优化写法
         Double fees = upMethod(1,20000.00);
         System.out.println(fees);
+        // 会员级别超范围，抛 IllegalArgumentException
+        Double feee = upMethod(5, 20000.00);
     }
 
     public Double upMethod(Integer type, Double amount) {
