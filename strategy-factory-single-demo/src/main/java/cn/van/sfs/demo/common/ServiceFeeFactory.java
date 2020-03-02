@@ -1,5 +1,6 @@
-package cn.van.sfs.demo.service;
+package cn.van.sfs.demo.common;
 
+import cn.van.sfs.demo.service.FeeService;
 import cn.van.sfs.demo.service.impl.IntermediateMember;
 import cn.van.sfs.demo.service.impl.JuniorMember;
 import cn.van.sfs.demo.service.impl.OrdinaryMember;
@@ -19,22 +20,22 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class ServiceFeeFactory {
 
-    private Map<Integer, ServiceFee> map;
+    private Map<Integer, FeeService> map;
 
     public ServiceFeeFactory() {
 
         // 该工厂管理所有的策略接口实现类
-        List<ServiceFee> serviceFees = new ArrayList<>();
+        List<FeeService> feeServices = new ArrayList<>();
 
-        serviceFees.add(new OrdinaryMember());
-        serviceFees.add(new JuniorMember());
-        serviceFees.add(new IntermediateMember());
-        serviceFees.add(new SeniorMember());
+        feeServices.add(new OrdinaryMember());
+        feeServices.add(new JuniorMember());
+        feeServices.add(new IntermediateMember());
+        feeServices.add(new SeniorMember());
 
         // 把所有策略实现的集合List转为Map
         map = new ConcurrentHashMap<>();
-        for (ServiceFee serviceFee : serviceFees) {
-            map.put(serviceFee.getType(), serviceFee);
+        for (FeeService feeService : feeServices) {
+            map.put(feeService.getType(), feeService);
         }
     }
 
@@ -46,7 +47,7 @@ public class ServiceFeeFactory {
     }
 
     /**
-     * 在构造方法的时候，初始化好 需要的 ServiceFeeStrategy
+     * 在构造方法的时候，初始化好 需要的 ServiceFeeFactory
      * @return
      */
     public static ServiceFeeFactory getInstance() {
@@ -58,7 +59,7 @@ public class ServiceFeeFactory {
      * @param type
      * @return
      */
-    public ServiceFee get(Integer type) {
+    public FeeService get(Integer type) {
         return map.get(type);
     }
 }

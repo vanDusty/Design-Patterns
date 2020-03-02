@@ -1,7 +1,6 @@
 package cn.van.sfs.demo.common;
 
-import cn.van.sfs.demo.service.ServiceFeeFactory;
-import cn.van.sfs.demo.service.ServiceFee;
+import cn.van.sfs.demo.service.FeeService;
 
 /**
  * @公众号： 风尘博客
@@ -20,18 +19,10 @@ public class CalculationUtil {
      * @throws IllegalArgumentException 会员级别输入错误
      */
     public static Double getFee(int type, Double money) {
-
-        if (type == MemberEnum.ORDINARY_MEMBER.code) {
-            return money;
-        }
-
-        ServiceFee strategy = ServiceFeeFactory.getInstance().get(type);
-
+        FeeService strategy = ServiceFeeFactory.getInstance().get(type);
         if (strategy == null) {
             throw new IllegalArgumentException("please input right value");
         }
-
         return strategy.compute(money);
     }
-
 }

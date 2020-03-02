@@ -1,7 +1,7 @@
 package cn.van.sfs.demo.service.impl;
 
 import cn.van.sfs.demo.common.MemberEnum;
-import cn.van.sfs.demo.service.ServiceFee;
+import cn.van.sfs.demo.service.FeeService;
 
 /**
  * @公众号： 风尘博客
@@ -10,7 +10,7 @@ import cn.van.sfs.demo.service.ServiceFee;
  * @Date 2020/2/6 8:19 下午
  * @Author by Van
  */
-public class SeniorMember implements ServiceFee {
+public class SeniorMember implements FeeService {
 
     /**
      * 计算高级会员所需缴费的金额
