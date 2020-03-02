@@ -1,0 +1,6 @@
+alias:
+  aliasMap:
+    first: ordinaryMember
+    second: juniorMember
+    third: intermediateMember
+    fourth: seniorMember
